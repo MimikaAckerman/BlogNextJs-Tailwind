@@ -1,51 +1,27 @@
 ---
-title: 'Next.js static HTML export'
-metaTitle: 'Next.js static HTML export'
-metaDesc: 'Creating a static HTML export Next.js application'
-socialImage: images/03-10-2021.jpg
-date: '2021-10-03'
+title: 'Hunter x Hunter'
+metaTitle: 'More information about Hunter x Hunter'
+metaDesc: 'xd'
+socialImage: images/hunterxhunter.jpg
 tags:
-  - nextjs
+  - Anime
 ---
 
-If you are looking for the best hosting for your Next.js application, check out [Vercel as your Next.js host](https://daily-dev-tips.com/posts/deploying-a-nextjs-application-on-vercel/).
+Tokyo Ghoul (東京喰種トーキョーグール, Tōkyō Gūru?) is the anime adaptation produced by Studio Pierrot based on the manga of the same name, which premiered in Japan on July 4, 2014 and ran for 12 episodes.
 
-However, sometimes you might need to find other hosting solutions for your Next.js application.
+A sequel titled Tokyo Ghoul √A (東京喰種トーキョーグール√A, Tōkyō Gūru √A?) was released in Japan on January 9, 2015 and featured 12 episodes. This sequel is characterized by possessing its own storyline, which unlike the first season, was not based on the manga.
 
-Today, we'll be looking at how we can generate a static HTML output of your Next.js application so we can host it wherever we want.
+On October 5, 2017, an adaptation of the Tokyo Ghoul:re manga was announced, although the broadcasting date and duration are currently unknown. 
 
-## Creating the Next.js static HTML export
+## Argument
 
-To create a static export with Next.js, we need to run the following two commands:
+Strange murders are occurring one after another in Tokyo. Due to evidence found at the scenes, the police conclude that the attacks are the work of Ghouls which are living beings that feed on human flesh. Kaneki and Hide, two childhood friends who go to Kamii University, meet in a cafe wondering what Ghouls are and what they look like, after a while they come to the conclusion that they may be hiding behind a human appearance.
 
-```bash
-next build && next export
-```
+That day Kaneki meets the girl he is attracted to, and finally manages to arrange a date with her; but after accompanying her all day and arriving to a desolate place in the city, it is revealed that the girl is a Ghoul and intends to devour Kaneki; who suffers several stab wounds but survives because he had a kidney transplant from Rize, who died thanks to some beams that fell on him by accident. But now Kaneki discovers that he has Ghoul blood in his body, and from that moment on he will have to eat human flesh if he wants to survive. 
 
-However, the easiest way to do this is to add these as a script in your `package.json` file like so:
 
-```js
-"scripts": {
-	"build": "next build && next export",
-},
-```
+We create a simple render of each show's own card, with an image and title of the anime show.
 
-With that in place, we can run `npm run build`. This gives us an `out` director, which can be uploaded to any server.
+![Top anime show in Next.js](https://cdn.hashnode.com/res/hashnode/image/upload/v1631712831922/I1Yb9K2DQ.png)
 
-![Next.js out directory](https://cdn.hashnode.com/res/hashnode/image/upload/v1632549979417/h2-1l-ch1.png)
 
-## Hosting the static HTML
-
-Since we now have this static HTML, we can find any hosting provider and upload this `out` directory.
-
-Let's see how this works on [Netlify drop](https://app.netlify.com/drop), for instance.
-
-Drag the `out` directory and wait a couple of seconds and your website is all uploaded!
-
-![Easy Next.js static hosting](https://cdn.hashnode.com/res/hashnode/image/upload/v1632550173074/8V79gspaI.png)
-
-[View my website hosted via this way on Netlify](https://sleepy-shannon-699868.netlify.app/)
-
-### Thank you for reading, and let's connect!
-
-Thank you for reading my blog. Feel free to subscribe to my email newsletter and connect on [Facebook](https://www.facebook.com/DailyDevTipsBlog) or [Twitter](https://twitter.com/DailyDevTips1)
